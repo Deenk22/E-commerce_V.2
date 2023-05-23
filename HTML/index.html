@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/Style.css">
+  <title>Welcome</title>
+
+</head>
+
+<!--Estamos realizando cambios probando Git CMD ... si experimentas algun error, ya sabes por que.
+recuerda para cambiar un usuario git config --global user.name "Deenk22" y para cambiar 
+un correo git config --global user.email "smj_personal@hotmail.com" y para saber si hemos
+realizado bien el cambio git config --global user.email y pulsamos intro-->
+
+<body>
+
+  <header>
+    <img src="../Assets/Icons/After The Earth-logos_black.png" alt="Logo" width="220px" />
+  </header>
+  <nav>
+    <ul>
+      <li><a href="productos.html">Todos los productos</a></li>
+      <li><a href="productos.html">Sobre nosotros</a></li>
+      <li><a href="productos.html">Contacto</a></li>
+      <li><a href="productos.html">Ofertas</a></li>
+      <li><a href="productos.html">Mis pedidos</a></li>
+    </ul>
+  </nav>
+
+  <!--Debemos trabajar mas en dejar los formularios en condiciones-->
+
+  <main>
+    <div class="iniciosesion">
+      <h4>Iniciar Sesion</h4>
+      <p>Introduce tus datos para iniciar sesion</p>
+      <div>
+        <form>
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="contraseña" placeholder="Password" />
+            <button type="submit">Iniciar sesion</button>
+        </form>
+      </div>
+    </div>
+    <div class="linkPack">
+      <p>Registrate y consigue 50 sonidos únicos <strong>gratis</strong> al instante.</p>
+   </div>
+    <div class="registro">
+      <h4>Registrate</h4>
+      <p>Introduce tus datos</p>
+      <div>
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre" /> 
+            <input type="text" name="apellido" placeholder="Apellidos" />
+            <input type="tel" name="telefono" placeholder="Telefono" />
+            <input type="text" name="usuario" placeholder="Nombre de Usuario" />
+            <input type="email" name="email" placeholder="Email" /> 
+            <input type="password" name="contraseña" placeholder="Contraseña" />
+            <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!--Hemos modificado la dimension de los dos ultimos logos-->
+
+  <section>
+    <div>
+      <img src="../Assets/Icons/PagoSeguroV.2.png" alt="LogoPayment" width="60px" />
+      <div>
+        <h5>Pago Seguro</h5>
+        <h6>100% Garantizado</h6>
+      </div>
+    </div>
+    <div>
+      <img src="../Assets/Icons/FreeEnvioV.2.png" alt="EnvioGratis" width="60px" />
+      <div>
+        <h5>Envío gratis</h5>
+        <h6>100% Garantizado</h6>
+      </div>
+    </div>
+    <div>
+      <img src="../Assets/Icons/garantia.png" alt="Garantia" width="60px" />
+      <div>
+        <h5>3 años de garantía</h5>
+        <h6>100% Garantizado</h6>
+      </div>
+    </div>
+    <div>
+      <img src="../Assets/Icons/ofertas.png" alt="OfertasUnicas" width="60px" />
+      <div>
+        <h5>Ofertas únicas</h5>
+        <h6>100% Garantizado</h6>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div>
+      <img src="../Assets/Icons/After The Earth-logos_black.png" alt="Logo" width="220px" />
+      <h4>After the Earth</h4>
+      <div>
+        <ul>
+          <li>Centro de ayuda</li>
+          <li>Servicio al consumidor</li>
+          <li>Escríbenos</li>
+          <li>Servicio telefónico</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Política de privacidad</li>
+          <li>Condiciones de compra</li>
+          <li>Opiniones de clientes</li>
+          <li>Avisos de privacidad y cookies</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h4>Unete a nuestra newsletter</h4>
+        <p>Recibe un paquete de samples <strong>Gratis</strong> cuando te suscribas</p>
+        <form>
+          <input type="email" name="email" placeholder="Suscribete" />
+          <button type="submit">Suscribirme</button>
+          <label>
+            <input type="checkbox" name="politica" id="politica" value="AceptoPolitica" />
+            Acepto las politicas de privacidad
+          </label>
+          <label>
+            <input type="checkbox" name="nuevosProductos" id="nuevosproductos" value="infoNuevosProductos" />
+            Recibir información sobre nuevos productos
+          </label>
+        </form> 
+<!--Hemos reducido el tamaño de los logos a 25px-->
+      </div>
+        <div>    
+          <h4>Siguenos en redes</h4>
+          <a href="https://www.youtube.com/channel/UCxMUe2NPv2SCdUrFtkqwP-g"><img src="../Assets/Icons/BlackYoutube.png" class="logoColor" alt="YoutubeLogo" width="25px"/></a>
+          <a href="https://www.unrealengine.com/marketplace/en-US/profile/AftertheEarth"><img src="../Assets/Icons/UnrealEngine.png" class="logoColor" alt="UnrealEngine" width="25px"/></a>
+          <a href="https://twitter.com/AftertheEarth_"><img src="../Assets/Icons/twitterv.2.png" class="logoColor" alt="LogoTwitter" width="25px"/></a>
+        </div> 
+    </div> 
+  </footer>
+
+</body>
+</html>
