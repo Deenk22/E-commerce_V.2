@@ -9,9 +9,11 @@
     --error: hsl(7deg 91% 50% / 1)
 }
 
+
 * {
     box-sizing: border-box;
 }  
+
 
 body{
     color: var(--negro);
@@ -21,10 +23,12 @@ body{
     font-size: 16px;
 }
 
+
 body.dark{
     --negro: hsl(var(--hue) 21% 98% / 1);
     --blanco: hsl(var(--hue) 21% 20% / 1);
 }
+
 
 img{
     max-width: 100%;
@@ -105,11 +109,11 @@ a{
 
 /* Input */
 
-form{
+/* form{
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
+} */
 
 input{
     padding: 16px 24px;
@@ -346,3 +350,7 @@ main.login .caja{
 .main-color{
     color: var(--principal);
 }
+
+
+
+

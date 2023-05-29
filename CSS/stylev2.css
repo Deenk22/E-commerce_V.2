@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Assets/Images/Cover_Header.jpg);
+    background-size: cover;
+}
+
+
+.signInMessage{
+    font-size: small;
+    color: #f7fffc;
+    display: flex;
+    justify-content: center;
+    margin-right: 16px;
+    margin-top: 32px;
+}
+
+
+.signInMessage a{
+    color: #f7fffc;
+    text-decoration: none;
+    border: 1px solid #ffb0b8;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+.signInMessage p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.signInMessage a:hover{
+    background-color: #ffb0b8;
+    transition: all 250ms;
+}
+
+
+.messageError{
+    color: #f7fffc;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.form {
+    color: #f7fffc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #f7fffc;
+    border-radius: 16px;
+    padding: 64px;  
+}
+
+
+.form:hover{
+    box-shadow: 16px 8px 0px #ffb0b8, -16px -8px 0px #f7fffc;
+    transition: all 400ms;
+}
+
+
+.form input{
+    display: flex;
+    margin-top: 4px;
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+    outline: currentColor;
+}
+
+
+.form input:focus{
+    color: #f7fffc;
+    background-color: #f7fffc34;
+    transition: 250ms;
+}
+
+
+.form button{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffb0b8;
+    width: 128px;
+    margin-top: 32px;
+
+    /* Esta transición se une mediente transform, declarandola de esta forma se crea un vínculo entre ellas
+    y 0.4s es la duracion que tarda la animacion y "traslateY(4px)" es hacia donde se orienta la animación < video > https://www.youtube.com/watch?v=SgmNxE9lWcY */
+
+   /* transition: transform 0.4s; */
+
+    /* Esta transition es super interesante, debe estar asociada a la misma propiedad en el :hover, es decir, si queremos que la transition se produzca o se genere con el background-color, pues tendrá que estar en ambos sitios... tanto en la clase como en la pseudoclase */
+
+    /* transition: background-color ease-in .1s; */
+}
+
+
+.form button:hover{
+    color: white;
+    background-color: #22222280;
+    /* transform: translateY(4px); */
+    transition: all 250ms;
+} 
+
+
+@keyframes slideInLeft {
+
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nameLogo{
+
+    /* Misma transition pero reducida */
+    animation:slideInLeft 1s ease-in 0s 1 normal none;
+
+    /* animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none; */
+
+
+    color: #ffb0b8;
+    margin-top: 96px;
+    margin-left: 16px;
+
+}
+
+
+/* 
+@keyframes my-animation {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    15% {
+
+        opacity: .15;
+
+    }
+
+    25% {
+
+        opacity: .35;
+
+    }
+
+    45% {
+
+        opacity: .15;
+
+    }
+
+    75% {
+
+        opacity: 0;
+
+    }
+
+} */
+
+
+
+
